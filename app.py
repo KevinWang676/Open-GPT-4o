@@ -62,10 +62,10 @@ def model_inference(input_wav, language, fs=16000):
 	
 	print(text)
 	text = text[0]["text"]
-  match = re.search(r'[^>]*$', text)
-  if match:
-    text = match.group(0)
-    print(text)
+  	match = re.search(r'[^>]*$', text)
+  	if match:
+    		text = match.group(0)
+    		print(text)
 	
 	return text
 
