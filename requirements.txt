@@ -12,3 +12,4 @@ decord
 flash_attn
 einops
 timm
+spaces
