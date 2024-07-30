@@ -156,5 +156,7 @@ tokenizer = AutoTokenizer.from_pretrained(path, trust_remote_code=True, use_fast
 
 # set the max number of tiles in `max_num`
 # pixel_values = load_image('./examples/image1.jpg', max_num=12).to(torch.bfloat16).cuda()
-generation_config = dict(max_new_tokens=1024, do_sample=False)
+#generation_config = dict(max_new_tokens=1024, do_sample=False)
+
+
 
