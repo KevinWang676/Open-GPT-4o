@@ -21,11 +21,10 @@ from funasr import AutoModel
 
 model = "FunAudioLLM/SenseVoiceSmall"
 model = AutoModel(model=model,
-				  vad_model="iic/speech_fsmn_vad_zh-cn-16k-common-pytorch",
-				  vad_kwargs={"max_single_segment_time": 30000},
+		  vad_model="iic/speech_fsmn_vad_zh-cn-16k-common-pytorch",
+		  vad_kwargs={"max_single_segment_time": 30000},
                   hub="hf",
-                  device="cuda"
-				  )
+                  device="cuda")
 
 @spaces.GPU
 def model_inference(input_wav, language, fs=16000):
